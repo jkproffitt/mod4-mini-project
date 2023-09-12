@@ -1,0 +1,77 @@
+:root {
+    --pink: #c046d0;
+    --purple: #713371;
+    --light: #fff;
+    --grey: grey;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    background: var(--pink);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: "Lucida Grande";
+    font-size: 1.25rem;
+
+}
+button:hover { 
+background: var(--purple);
+}
+
+#countdown {
+    font-size: 1rem;
+}
+
+#msg.success,
+#msg.error {
+    visibility: visible;
+}
+
+#msg.success {
+    color: #001b44;
+    ;
+}
+
+#msg.error {
+    color: #e6252c;
+}
+
+@media screen and (max-width: 1183px) {
+    main {
+        flex-direction: column;
+    }
+
+    .word-guess,
+    .results {
+        width: 90vw;
+    }
+
+    section {
+        background-color: white;
+        margin: 20px auto;
+        width: 92vw;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    .large-font {
+        font-size: 2em;
+    }
+
+    .reset-button {
+        font-size: 12px;
+        width: 20ox;
+
+    }
+}
